@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { three } from '@/sanity/lib/queries';
 import Image from 'next/image';
-
 import { Product } from '../../../types/products';
 
+import Link from 'next/link'; // Importing Next.js Link component for routing
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 
@@ -31,9 +31,11 @@ const Shoes = () => {
       {product.map((product)=>(
         <div key={product._id}>
           <h2 className='text-lg font-semibold mt-4'>{product.productName}</h2>
+          <Link href={`/product/${product.slug.current}`}>
           {product.image && (
             <Image src={urlFor(product.image).url()} alt="image" width={200} height={200} className=' h-48 object-cover rounded-md ' /> 
           )}
+          
           <p className='text-gray-500 mt-2'>
           {product.price}
           
@@ -41,6 +43,7 @@ const Shoes = () => {
           <p  className='text-gray-500 mt-2'>
           {product.description}
           </p>
+          </Link>
         </div>
 
       ))} 

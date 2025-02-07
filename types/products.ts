@@ -11,4 +11,8 @@ export interface Product{
     };
     price:number;
     description:string;
+    slug:{
+        current:string;
+        _type:"slug";
+    };
 }

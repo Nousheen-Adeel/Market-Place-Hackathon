@@ -28,7 +28,7 @@ const Navbar2 = () => {
                 </span>
                 <span className='space-x- py-2 flex'>
                  <IoIosHeartEmpty className='text-black'size={26}/>
-                 <BsBagCheck className='text-black'size={24} />
+                 <Link href='/Cart'><BsBagCheck className='text-black'size={24} /></Link>
                  </span>
                  </div>
                 {/* two icons */}
