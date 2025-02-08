@@ -6,6 +6,9 @@ import { getCartItems, removeFromCart, updateInventory } from "../actions/action
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
+import Navbar1 from "../components/Navbar1";
+import Navbar2  from "../components/Navbar2";
+
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -74,6 +77,8 @@ const CartPage = () => {
 
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
+        <Navbar1/>
+        <Navbar2/>
       <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">Your Shopping Cart</h1>
 
       <div className="space-y-6 max-w-5xl mx-auto">
