@@ -14,7 +14,7 @@ const Navbar1 = () => {
         <div className='hidden md:flex items-center gap-4 text-[12px] font-medium text-black'>
           <Link href='/Products' className='hover:underline'>Find a Store</Link>
           <div className='w-[2px] h-4 bg-black'></div>
-          <span className='hover:underline cursor-pointer'>Help</span>
+          <Link href='/Gethelp'><span className='hover:underline cursor-pointer'>Help</span></Link>
           <div className='w-[2px] h-4 bg-black'></div>
           <Link href='/Joinus' className='hover:underline'>Join Us</Link>
           <div className='w-[2px] h-4 bg-black'></div>
