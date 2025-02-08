@@ -8,6 +8,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
 import Navbar1 from "../components/Navbar1";
 import Navbar2  from "../components/Navbar2";
+import Link from "next/link";
 
 
 const CartPage = () => {
@@ -144,7 +145,7 @@ const CartPage = () => {
             onClick={handleProceed}
             className="mt-6 w-full px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200"
           >
-            Proceed to Checkout
+            <Link href="/Checkout1">Proceed to Checkout</Link>
           </button>
         </div>
       )}
