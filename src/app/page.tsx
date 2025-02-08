@@ -4,6 +4,7 @@ import Hero1 from "./components/Hero1";
 import Footer1 from "./components/Footer1";
 import Navbar2 from "./components/Navbar2";
 import Navbar1 from "./components/Navbar1";
+import Footer2 from "./components/Footer2";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar3/>
       <Hero1/>
     <Footer1/>
+    <Footer2/>
     
   
       

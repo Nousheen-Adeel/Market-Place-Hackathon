@@ -2,6 +2,7 @@ export interface Product{
     _id: string;
     productName: string;
     _type: "product";
+    inventory: number
     image?:{
         asset:{
             url?:string;

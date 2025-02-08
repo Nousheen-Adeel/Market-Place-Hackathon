@@ -3,6 +3,10 @@ import { Product } from "../../../../types/products";
 import { groq } from "next-sanity";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+import Navbar1 from "@/app/components/Navbar1";
+import Navbar2 from "@/app/components/Navbar2";
+import Footer2 from "@/app/components/Footer2";
+
 
 interface ProductPageProps {
     params: { slug: string };
@@ -33,6 +37,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <div className="flex flex-col gap-8">
+                
+<Navbar1/>
+<Navbar2/>
                     <p className="text-4xl text-center font-bold">Product Detail Page</p>
             
           {product.image && (
@@ -52,6 +59,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
 
             </div>
+    
+            <Footer2/>
         </div>
     );
 }
