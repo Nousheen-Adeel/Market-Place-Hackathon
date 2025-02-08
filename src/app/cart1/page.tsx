@@ -2,7 +2,7 @@
 
 import { Product } from "../../../types/products";
 import React, { useEffect, useState } from "react";
-import { getCartItems, removeFromCart, updateInventory } from "../actions/actions";
+import { getCartItems, removeFromCart, updateInventory } from "../Process/process";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";

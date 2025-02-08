@@ -33,7 +33,7 @@ const Navbar2 = () => {
           </div>
           <div className="flex space-x-4">
             <IoIosHeartEmpty className="text-black" size={26} />
-            <Link href="/Cart">
+            <Link href="/cart1">
               <BsBagCheck className="text-black" size={24} />
             </Link>
           </div>

@@ -6,7 +6,7 @@ import { Product } from '../../../types/products';
 import Link from 'next/link';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
-import { addToCart } from '../actions/actions';
+import { addToCart } from '../Process/process';
 import Swal from 'sweetalert2';
 
 const Shoes = () => {

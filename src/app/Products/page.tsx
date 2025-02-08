@@ -3,10 +3,15 @@ import Sidebar from '../components/Sidebar'
 import Product1 from '../components/Product1';
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TbAdjustmentsHorizontal } from "react-icons/tb";
+import Navbar1 from '../components/Navbar1';
+import Navbar2 from '../components/Navbar2';
+import Footer2 from '../components/Footer2';
 
 const page = () => {
   return (
     <div className='md:max-w-[1440px] h-fit'>
+        <Navbar1/>
+        <Navbar2/>
         <div className= 'md:max-w-[1440px] px-12 py-6 bg-white text-black flex justify-between '>
             <div>
                 <h2>New (500)</h2>
@@ -49,6 +54,7 @@ const page = () => {
 
 
         </div>
+        <Footer2/>
     </div>
   )
 }
